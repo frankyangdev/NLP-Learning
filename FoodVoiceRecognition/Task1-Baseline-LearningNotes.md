@@ -80,3 +80,6 @@ for i in tqdm(range(100000)):
     print(i)
 ```
 
+![image](https://user-images.githubusercontent.com/39177230/114500238-37ace700-9c5a-11eb-9ba7-817b86297f15.png)
+
+
