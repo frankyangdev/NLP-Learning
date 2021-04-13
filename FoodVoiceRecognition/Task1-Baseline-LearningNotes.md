@@ -1,20 +1,22 @@
 ### 1. Notebook: 
 CNN Baseline运行结果: [T1-CNN-Baseline.ipynb](https://github.com/frankyangdev/NLP-Learning/blob/main/FoodVoiceRecognition/T1-CNN-Baseline.ipynb)
 
-### 2. Code Study:
+### 2. Notebook Study:
 
-#### unzip -qq
+#### 2.1 unzip -qq
 
 -q perform operations quietly (-qq = even quieter). Ordinarily unzip prints the names of the files it's extracting or testing, the extrac‐ tion methods, any file or zipfile comments that may be stored in the archive, and possibly a summary when finished with each archive. The -qq options suppress the printing of some or all of these messages.
 
-#### Python Library: [librosa](https://librosa.org/doc/latest/index.html) 
+#### 2.2 Python Library: [librosa](https://librosa.org/doc/latest/index.html) 
+
+
 
 librosa is a python package for music and audio analysis. It provides the building blocks necessary to create music information retrieval systems.
 
 **Overview**
 
 
-The *librosa* package is structured as collection of submodules:
+The **librosa** package is structured as collection of submodules:
 
   - librosa
 
@@ -65,4 +67,16 @@ The *librosa* package is structured as collection of submodules:
     - :ref:`librosa.util <util>`
         Helper utilities (normalization, padding, centering, etc.)
 
+
+#### 2.3 Python Package: [tqdm](https://pypi.org/project/tqdm/)
+
+**tqdm** derives from the Arabic word taqaddum (تقدّم) which can mean “progress,” and is an abbreviation for “I love you so much” in Spanish (te quiero demasiado).
+
+Instantly make your loops show a smart progress meter - just wrap any iterable with tqdm(iterable), and you’re done!
+
+```python
+from tqdm import tqdm
+for i in tqdm(range(100000)):
+    print(i)
+```
 
