@@ -1,6 +1,9 @@
 ### 1. Notebook: 
 CNN Baseline运行结果: [T1-CNN-Baseline.ipynb](https://github.com/frankyangdev/NLP-Learning/blob/main/FoodVoiceRecognition/T1-CNN-Baseline.ipynb)
 
+![image](https://user-images.githubusercontent.com/39177230/114564501-f260d780-9ca2-11eb-8185-5f4eef6b5776.png)
+
+
 ### 2. Notebook Study:
 
 #### 2.1 unzip -qq
