@@ -260,10 +260,40 @@ print("The accuracy of the model is %f" % (true_num/len(result_bool)))
 
 ```
 
+#### 2.5 CNN的基本知识
 
+1、卷积神经网络(Convolutional Neural Networks，CNN)的作用：
+    1.cnn跟全连接的区别：原来一个输出神经元的计算是跟所有输入层的神经元相连，现在只是局部输入层的
+                        神经元相连；同一所个通道中所有神经元的计算共享同一组权重和偏置
+ 
+    CNN可以有效的降低 传统深度神经网络 参数量与计算量。
+    2.FC DDN 参数量与连接数：
+        参数量 = 连接数 = 输入featureMap总特征数（尺寸） * 输出featureMap总特征数（尺寸）
+ 
+    3.CNN参数量(卷积核):  跟模型总的训练时间和次数有很大关系，参数量越多花的训练时间越长，越难训练；
+                      参数量就是W数(卷积核尺寸，例：3*3*3*2)
+      CNN链接数量(卷积)： 跟当次训练的时间有关，越多计算量越大，训练时间越长；
+                      连接数的数量就是参数量（即卷积核的大小）*输出层的尺寸(卷积核大小)*输出层的尺寸。 
+                      注意b加的位置就是每一个输出通道所有输入通道计算结果总和 + b
+ 
+      CNN下采样（池化）的连接数： filter尺寸(4)*通道数*输出层的尺寸
+      CNN全连接的连接量： 等于参数量，等于输入层尺寸(2维)*输入层通道数*输出尺寸(1维)
+2、常见的CNN结构有：
+    LeNet-5、AlexNet、ZFNet、VGGNet、GoogleNet、ResNet等等，其中在LVSVRC2015冠军ResNet是AlexNet的20多倍，
+    是VGGNet的8倍；
+    其中：AlexNet、ZFNet、GoogleNet 是过度的神经网络
+         ① LeNet-5：结构最为简单，常用作小型简单的项目，例如嵌入式芯片常常用到LeNet-5
+         ② VGGNet16、ResNet（151层）：模型复杂，适合处理大型的项目，占用资源较高。
+3、从这些结构来讲CNN发展的一个方向就是层次的增加，通过这种方式可以利用增加的非线性得出目标函数的近似结构，同时得出更好
+    的特征表达，但是这种方式导致了网络整体复杂性的增加，使网络更加难以优化，很容易过拟合。
+4、CNN的应用主要是在图像分类和物品识别等应用场景应用比较多
+————————————————
+版权声明：本文为CSDN博主「自学AI的鲨鱼儿」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+原文链接：https://blog.csdn.net/qq_16555103/article/details/89914946
 
 
 **Reference**：
 
 1. [keras 快速入门](https://blog.csdn.net/qq_40791129/article/details/113925142)
 2. [Keras中文文档](https://keras-cn.readthedocs.io/en/latest/layers/core_layer/)
+3. [CNN（卷积神经网络）](https://blog.csdn.net/qq_16555103/article/details/89914946)
