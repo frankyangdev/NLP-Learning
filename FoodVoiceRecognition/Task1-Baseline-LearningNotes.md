@@ -108,6 +108,9 @@ model = Sequential()
 **2. 构建网络**
 
 神经网络中的数据层包括全连接层(Dense)、激活层(Activation)、随机失活层（Dropout）、Flatten层、Reshape层、Permute层、RepeatVector层、Lambda层、ActivityRegularizer层、Masking层。每一层的功能如下：
+![image](https://user-images.githubusercontent.com/39177230/114537382-b74fab80-9c84-11eb-8940-626ea901f530.png)
+
+不同层之间的实例化参数不全相同，具体参考文档[keras 常用层](https://keras-cn.readthedocs.io/en/latest/layers/core_layer)
 
 
 
@@ -116,3 +119,4 @@ model = Sequential()
 **Reference**：
 
 1. [keras 快速入门](https://blog.csdn.net/qq_40791129/article/details/113925142)
+2. [Keras中文文档](https://keras-cn.readthedocs.io/en/latest/layers/core_layer/)
