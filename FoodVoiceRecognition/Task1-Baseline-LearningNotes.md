@@ -82,4 +82,37 @@ for i in tqdm(range(100000)):
 
 ![image](https://user-images.githubusercontent.com/39177230/114500238-37ace700-9c5a-11eb-9ba7-817b86297f15.png)
 
+#### 2.4 Python Deep Learning API [keras](https://keras.io/getting_started/)
 
+Keras是一个高层神经网络API，Keras由纯Python编写而成并基 Tensorflow、 Theano以及 CNTK后端。Keras 为支持快速实验而生，能够把你的idea迅速转换为结果，如果你有如下需求，请选择Keras：
+* 简易和快速的原型设计（keras具有高度模块化，极简，和可扩充特性）
+* 支持CNN和RNN，或二者的结合
+* 无缝CPU和GPU切换
+
+
+keras编程能够划分为五个步骤：
+
+1. 选择模型
+2. 构建神经网络结构
+3. 编译
+4. 训练
+5. 预测
+
+**1. 选择模型**
+Keras有两种类型的模型，顺序模型（[Sequential](https://keras-cn.readthedocs.io/en/latest/legacy/models/sequential/)）和泛型模型（[Model](https://keras-cn.readthedocs.io/en/latest/legacy/models/model/)），本文选择的是简单的顺序模型。直接实例化对象即可：
+
+```python
+model = Sequential()
+```
+
+**2. 构建网络**
+
+神经网络中的数据层包括全连接层(Dense)、激活层(Activation)、随机失活层（Dropout）、Flatten层、Reshape层、Permute层、RepeatVector层、Lambda层、ActivityRegularizer层、Masking层。每一层的功能如下：
+
+
+
+
+
+**Reference**：
+
+1. [keras 快速入门](https://blog.csdn.net/qq_40791129/article/details/113925142)
