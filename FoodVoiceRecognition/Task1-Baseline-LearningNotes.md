@@ -112,6 +112,56 @@ model = Sequential()
 
 不同层之间的实例化参数不全相同，具体参考文档[keras 常用层](https://keras-cn.readthedocs.io/en/latest/layers/core_layer)
 
+**Dense层**
+```python
+keras.layers.core.Dense(
+    units, 
+    activation=None, 
+    use_bias=True,
+    kernel_initializer='glorot_uniform',
+    bias_initializer='zeros', 
+    kernel_regularizer=None, 
+    bias_regularizer=None, 
+    activity_regularizer=None,
+    kernel_constraint=None, 
+    bias_constraint=None)
+```
+
+重要参数如下：
+
+* units：大于0的整数，代表该层的输出维度。
+* activation：激活函数，为预定义的激活函数名（参考激活函数），或逐元素（element-wise）的Theano函数。如果不指定该参数，将不会使用任何激活函数（即使用线性激活函数：a(x)=x）
+* use_bias: 布尔值，是否使用偏置项
+
+Code example:
+
+```python
+model.add(Dense(500,input_shape=(784,))) # 输入层，28*28=784  
+model.add(Activation('tanh')) # 激活函数是tanh  
+model.add(Dropout(0.5)) # 采用50%的dropout
+
+model.add(Dense(500)) # 隐藏层节点500个  
+model.add(Activation('tanh'))  
+model.add(Dropout(0.5))
+
+model.add(Dense(10)) # 输出结果是10个类别，所以维度是10  
+model.add(Activation('softmax')) # 最后一层用softmax作为激活函数
+
+```
+![image](https://user-images.githubusercontent.com/39177230/114538069-84f27e00-9c85-11eb-8f3e-976150fd3e1d.png)
+
+
+**3. 编译**
+
+```python
+compile(self, 
+        optimizer, 
+        loss, 
+        metrics=[], 
+        loss_weights=**None**,
+        sample_weight_mode=**None**)
+```
+
 
 
 
