@@ -22,9 +22,13 @@
 
 
 
-#### 2.3 快速傅立叶变换（Fast Fourier Transformation,FFT）：将时域信号变换成为信号的功率谱 ####
+* #### 快速傅立叶变换（Fast Fourier Transformation,FFT）：将时域信号变换成为信号的功率谱 ####
 
-#### 2.4 离散余弦变换（Discrete Cosine Transformation,DCT）：去除各维信号之间的相关性，将信号映射到低维空间 ####
+* #### 离散余弦变换（Discrete Cosine Transformation,DCT）：去除各维信号之间的相关性，将信号映射到低维空间 ####
+
+* #### Windowing ####
+Windowing involves the slicing of the audio waveform into sliding frames.
+![image](https://user-images.githubusercontent.com/39177230/115111979-c781c680-9fb5-11eb-8ec0-aa79818374f7.png)
 
 
 
