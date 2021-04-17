@@ -30,9 +30,23 @@
 Windowing involves the slicing of the audio waveform into sliding frames.
 ![image](https://user-images.githubusercontent.com/39177230/115111979-c781c680-9fb5-11eb-8ec0-aa79818374f7.png)
 
+* #### Cepstrum — IDFT(inverse Discrete Fourier Transform) ####
+ 
+Below is the model of how speech is produced.
+
+![image](https://user-images.githubusercontent.com/39177230/115112065-33642f00-9fb6-11eb-8a28-dfc8762de31a.png)
+
+
+Cepstrum is the reverse of the first 4 letters in the word “spectrum”. Our next step is to compute the Cepstral which separates the glottal source and the filter. Diagram (a) is the spectrum with the y-axis being the magnitude. Diagram (b) takes the log of the magnitude. Look closer, the wave fluctuates about 8 times between 1000 and 2000. Actually, it fluctuates about 8 times for every 1000 units. That is about 125 Hz — the source vibration of the vocal folds.
+
+![image](https://user-images.githubusercontent.com/39177230/115112126-981f8980-9fb6-11eb-988c-b4b11c1a6be3.png)
+
+
+
 
 
 
 ### Reference ###
 
 1. [语音特征参数MFCC提取过程详解](https://blog.csdn.net/jojozhangju/article/details/18678861)
+2. [Speech Recognition — Feature Extraction MFCC & PLP](https://jonathan-hui.medium.com/speech-recognition-feature-extraction-mfcc-plp-5455f5a69dd9)
