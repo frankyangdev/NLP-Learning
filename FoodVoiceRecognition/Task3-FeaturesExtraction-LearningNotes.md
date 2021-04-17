@@ -30,7 +30,7 @@
 Windowing involves the slicing of the audio waveform into sliding frames.
 ![image](https://user-images.githubusercontent.com/39177230/115111979-c781c680-9fb5-11eb-8ec0-aa79818374f7.png)
 
-* #### Cepstrum — IDFT(inverse Discrete Fourier Transform) ####
+* #### Cepstrum — IDFT(inverse Discrete Fourier Transform 离散傅立叶变换) ####
  
 Below is the model of how speech is produced.
 
