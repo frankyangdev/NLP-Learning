@@ -15,4 +15,4 @@ CNN具有一些传统技术所没有的优点：良好的容错能力、并行�
 
 
 
-[]https://blog.csdn.net/fengbingchun/article/details/50529500)
+[卷积神经网络(CNN)基础介绍](https://blog.csdn.net/fengbingchun/article/details/50529500)
