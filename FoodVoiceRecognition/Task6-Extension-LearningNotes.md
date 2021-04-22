@@ -26,10 +26,11 @@
 2. [ASRT A Deep-Learning-Based Chinese Speech Recognition System_SpeechRecognition](https://github.com/nl8590687/ASRT_SpeechRecognition)
 3. [ESPnet: end-to-end speech processing toolkit](https://github.com/espnet/espnet)
 4. [Automatic Speech Recognition in Tensorflow 2](https://github.com/TensorSpeech/TensorFlowASR)
-5. [高斯混合模型（GMM）介绍以及学习笔记](https://blog.csdn.net/jojozhangju/article/details/19182013)
+
 
 
 
 ### Reference ###
 
 1. [隐马尔科夫模型（HMM）](https://blog.csdn.net/qq_27586341/article/details/94602772)
+2. [高斯混合模型（GMM）介绍以及学习笔记](https://blog.csdn.net/jojozhangju/article/details/19182013)
